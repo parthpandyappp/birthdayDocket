@@ -1,0 +1,52 @@
+.sidebar {
+    margin-top: 4.5rem;
+    margin-left: 2rem;
+    background-color: #f3f4f6;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border: 5px solid black;
+  }
+  
+  .sidebar h3 {
+    color: black;
+  }
+  
+  .portfolio {
+    background-color: #ddd6fe;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+  
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input:checked ~ .portfolio {
+    left: 0;
+  }
+  
+  input:checked ~ label {
+    left: 0;
+  }
+  
+  label {
+    margin-top: 4.5rem;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 245px;
+    background-color: #ddd6fe;
+  
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+  }
